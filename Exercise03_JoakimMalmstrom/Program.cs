@@ -21,7 +21,7 @@ namespace Exercise03_JoakimMalmstrom
                 // Printing the created persons for a list
                 foreach (var p in personHandler.PersonList())
                 {
-                    PrintPersons(p.FName, p.LName, p.Age, p.Height, p.Weight);
+                    Console.WriteLine(p);
                 }
             }
             catch (ArgumentException e)
@@ -31,15 +31,6 @@ namespace Exercise03_JoakimMalmstrom
             }
 
             Console.ReadLine();
-        }
-        // Created a method for printing the PersonList
-        public static void PrintPersons(string fName, string lName, int age, double height, double weight)
-        {
-            Console.WriteLine($"First Name: {fName}");
-            Console.WriteLine($"Last Name: {lName}");
-            Console.WriteLine($"Age: {age}");
-            Console.WriteLine($"Height: {height}");
-            Console.WriteLine($"Weight: {weight}\n");
         }
     }
 }

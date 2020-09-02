@@ -91,5 +91,16 @@ namespace Exercise03_JoakimMalmstrom
             Height = height;
             Weight = weight;
         }
+
+        // Overrides ToString and prints out all the classes properties
+        public override string ToString()
+        {
+            return
+                $"First Name: {FName}\n" +
+                $"Last Name: {LName}\n" +
+                $"Age: {Age}\n" +
+                $"Height: {Height}\n" +
+                $"Weight: {Weight}\n";
+        }
     }
 }
